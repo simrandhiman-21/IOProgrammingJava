@@ -1,4 +1,4 @@
-package org.json.assignment.ValidateJson;
+package org.cvshandling.assignment.ValidateJson;
 
 public class User {
         public String name;
@@ -6,3 +6,4 @@ public class User {
         public int age;
         public String email;
 }
+

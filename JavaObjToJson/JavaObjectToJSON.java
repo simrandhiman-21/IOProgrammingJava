@@ -1,6 +1,7 @@
 package org.json.assignment.JavaObjToJson;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.google.gson.Gson;
+import com.google.gson.*;
 
 public class JavaObjectToJSON {
     public static void main(String[] args) throws JsonProcessingException {
@@ -9,7 +10,7 @@ public class JavaObjectToJSON {
 //        String ans=gobj.toJson(s1);
 //        System.out.println(ans);
 
-        Car carobj=new Car("black","fortuner","yes");
+        org.json.assignment.JavaObjToJson.Car carobj=new org.json.assignment.JavaObjToJson.Car("black","fortuner","yes");
         Gson json=new Gson();
         String gsonstring=json.toJson(carobj);
         System.out.println("Json "+gsonstring);
